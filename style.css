@@ -27,13 +27,11 @@ body{
   align-items: center;
   padding: var(--page-padding-size);
   background-color: var(--hero-bg-color);
+  min-height: 50px;
 }
 
 .logo a{ 
   color: var(--hero-main-text-color);
-}
-
-.logo {
   font-size: 24px;
 }
 
@@ -41,14 +39,10 @@ a {
   text-decoration: none;
 }
 
-
 .nav-items ul{
   display: flex;
   gap: 1em;
   font-size: 18px;
-}
-
-ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -65,13 +59,12 @@ ul {
   gap: 1em;
   background-color: var(--hero-bg-color);
   padding: var(--page-padding-size);
-  padding-top: 40px;
-  padding-bottom: 100px;
-  margin: 0;
+  min-height: 400px;
 }
 
 .hero {
-  flex: 0 1 50%;
+  flex: 1 1 50%;
+  min-height: 211px;
 }
 
 .hero h1 {
@@ -97,14 +90,17 @@ ul {
 
 .hero-img {
   display: flex;
-  flex: 1 1 auto;
+  flex:1 1 50%;
   justify-content: center;
-  height: 211.5px;
-  width: 100%;
+  width:max-content;
+  min-height: 211px;
+  background-color: var(--hero-sub-text-color);
+  align-items: center;
 }
 
 .info-container {
   padding: var(--page-padding-size);
+  min-height: 400px;
 }
 
 .info-title {
@@ -119,6 +115,7 @@ ul {
   text-align: center;
   gap: 25px;
 }
+
 .info-cards img {
   width: 100px;
   height: 100px;
@@ -129,27 +126,49 @@ ul {
 .card {
   display: flex;
   flex-flow: column wrap;
-  align-items: center;
   width: 120px;
 }
 
 .quote-container {
   padding: var(--page-padding-size);
+  background-color: var(--hero-sub-text-color);
+  min-height: 400px;
+  color: var(--quote-text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quote p{
+  font-size: 36px;
+  padding: 0;
+  margin: 0;
+}
+
+.author p{
+  font-size: 24px;
+  font-style: italic;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
 }
 
 .signUp-container {
   padding: var(--page-padding-size);
+  min-height: 300px;
 }
 
 footer{
   padding: var(--page-padding-size);
   background-color: var(--hero-bg-color);
-  color: var(--hero-main-text-color)
 }
 
 .footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 50px;
   padding: 25px;
+  color: var(--hero-sub-text-color)
 }
