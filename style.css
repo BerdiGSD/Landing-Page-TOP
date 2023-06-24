@@ -18,7 +18,7 @@ body{
   display:flex;
   flex-direction: column;
   justify-content: space-between;
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', 'Times New Roman', sans-serif;
 }
 
 .navbar {
@@ -101,19 +101,25 @@ a {
 .info-container {
   padding: var(--page-padding-size);
   min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.info-title {
+.info-title p{
   font-size: 36px;
   color: var(--info-main-text-color);
   text-align: center;
+  margin-bottom: 0.6em;
+  margin-top: 0;
 }
 
 .info-cards {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   text-align: center;
-  gap: 25px;
+  gap: 1.5em;
 }
 
 .info-cards img {
@@ -121,12 +127,14 @@ a {
   height: 100px;
   border: 5px solid var(--btn-bg-color);
   border-radius: 8px;
+  
 }
 
-.card {
-  display: flex;
-  flex-flow: column wrap;
-  width: 120px;
+.card p {
+  width: 7rem;
+  margin: 0;
+  padding: 0;
+  font-size: smaller;
 }
 
 .quote-container {
@@ -157,6 +165,49 @@ a {
 .signUp-container {
   padding: var(--page-padding-size);
   min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.signUp-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-basis: 100%;
+  background-color: var(--btn-bg-color);
+  color: var(--hero-main-text-color);
+  border-radius: .75em;
+  padding: 2em;
+}
+
+.signUp-info p , .signUp-btn2{
+  font-size: 18px;
+  margin: 0;
+}
+
+.signUp-info p:first-of-type {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.signUp-info p:last-of-type {
+  color: var(--hero-sub-text-color)
+}
+
+.signUp-Button{
+  display: flex;
+  align-items: center;
+}
+
+.signUp-btn2 {
+  background-color: var(--btn-bg-color);
+  color: var(--hero-main-text-color);
+  border-color: var(--hero-main-text-color);
+  border-radius: .25em;
+  border-style: solid;
+  padding: .25em 1.5em .25em 1.5em;
 }
 
 footer{
